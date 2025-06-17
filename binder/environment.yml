@@ -8,23 +8,23 @@ channels:
   - conda-forge
 dependencies:
   # Jupyter dependencies
-  - jupyterhub>=1.5,<2
-  - jupyterlab>=3.2,<4
-  - jupyter-resource-usage
-  - jupyterlab-topbar
-  - jupyterlab-topbar-text
-  - jupyterlab-system-monitor
-  - nodejs
-  - pip
+  - jupyterhub>=4.1.6,<5
+  - jupyterlab>=4.4,<5
+  - notebook>=7.4,<8
+  - jupyter-resource-usage>=1,<2
+  - jupyterlab-topbar-text >=1.1.0,<2
+  - nodejs>=20
+ 
   # Jupyter archive
   # https://github.com/jupyterlab-contrib/jupyter-archive
-  - jupyter-archive=3.3.4
+  - jupyter-archive
+  - jupyterlab-variableinspector
   # R environment
   - r-irkernel
   - r-base>=4
   - r-tidyverse
   # JupyterLab Variable inspector
-  # https://github.com/lckr/jupyterlab-variableInspector
+  - pip
+  # Print module version
+    - watermark
   - r-repr
-  - pip:
-    - lckr-jupyterlab-variableinspector

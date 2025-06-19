@@ -35,5 +35,5 @@ dependencies:
   # JupyterLab Variable inspector
   - pip
   - pip:
-    -watermark
+    - watermark
   

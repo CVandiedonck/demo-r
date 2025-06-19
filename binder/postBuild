@@ -12,13 +12,13 @@ R -e "install.packages('diagram', repos='https://packagemanager.rstudio.com/cran
 # if not available as conda package
 # First install Bioconductor package manager
 # https://bioconductor.org/install/
-#R -e "install.packages('BiocManager', repos='https://packagemanager.rstudio.com/cran/__linux__/jammy/latest')"
-#R -e "BiocManager::install(version = '3.18')"
+R -e "install.packages('BiocManager', repos='https://packagemanager.rstudio.com/cran/__linux__/jammy/latest')"
+R -e "BiocManager::install(version = '3.18')"
 
 # Then install required packages
 # Biostrings: Efficient manipulation of biological strings
 # https://bioconductor.org/packages/release/bioc/html/Biostrings.html
-#R -e "BiocManager::install('Biostrings')"
+R -e "BiocManager::install('Biostrings')"
 
 # NOT TESTED : check that the R is correctly installed
 #R -e "IRkernel::installspec(user = FALSE)"
